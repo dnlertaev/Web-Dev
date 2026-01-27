@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Project: Recipe book</title>
+    <meta charset="utf-8">
+    <style>
+      /* Element selectors */
+      body {
+        background-color: rgb(255, 248, 235);
+        font-family: Arial, sans-serif;
+        color: rgb(40, 40, 40);
+      }
+
+      h1 {
+        color: rgb(160, 60, 0);
+      }
+
+      h2 {
+        color: rgb(0, 110, 160);
+      }
+
+      p {
+        line-height: 1.4;
+      }
+
+      a {
+        color: rgb(0, 120, 90);
+      }
+
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        max-width: 650px;
+        background-color: rgb(255, 255, 255);
+      }
+
+      th, td {
+        border: 1px solid rgb(210, 210, 210);
+        padding: 8px;
+        text-align: left;
+      }
+
+      th {
+        background-color: rgb(235, 245, 255);
+      }
+
+      /* Class selectors */
+      .recipe {
+        background-color: rgb(255, 255, 255);
+        padding: 14px;
+        border: 1px solid rgb(230, 230, 230);
+        max-width: 750px;
+        margin-bottom: 18px;
+      }
+
+      .note {
+        color: rgb(120, 80, 20);
+      }
+
+      /* ID selector */
+      #contents {
+        background-color: rgb(255, 240, 210);
+        padding: 12px;
+        border: 1px solid rgb(235, 210, 170);
+        max-width: 750px;
+      }
+
+      img {
+        width: 320px;
+        height: 200px;
+        border: 1px solid rgb(220, 220, 220);
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Barboz's Recipe Book</h1>
+
+    <h2>Contents</h2>
+    <div id="contents">
+      <ol>
+        <li><a href="#recipe1">Recipe 1 - Scrambled Eggs</a></li>
+        <li><a href="#recipe2">Recipe 2 - Chicken Wrap</a></li>
+        <li><a href="#recipe3">Recipe 3 - Banana Pancakes</a></li>
+      </ol>
+    </div>
+
+    <!-- Recipe 1 -->
+    <div class="recipe">
+      <h2 id="recipe1">Recipe 1 - Scrambled Eggs</h2>
+
+      <img src="https://www.kasandbox.org/programming-images/food/eggs.png"
+           alt="Cooked eggs on a plate">
+
+      <ul>
+        <li><strong>Time:</strong> 7-10 minutes</li>
+        <li><strong>Serves:</strong> 1</li>
+        <li class="note">Tip - cook on low heat for a creamy texture.</li>
+      </ul>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Ingredients</th>
+            <th>Quantity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Eggs</td>
+            <td>2-3</td>
+          </tr>
+          <tr>
+            <td>Butter</td>
+            <td>1 tsp</td>
+          </tr>
+          <tr>
+            <td>Salt + pepper</td>
+            <td>to taste</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Steps</h3>
+      <ol>
+        <li>Crack the eggs into a bowl and whisk with salt and pepper.</li>
+        <li>Melt butter in a pan on low heat.</li>
+        <li>Pour in eggs and stir slowly until soft curds form.</li>
+      </ol>
+
+      <p><em>Source: <a href="https://www.khanacademy.org/computing/computer-programming" target="_blank">Khan Academy (learning link)</a></em></p>
+      <p><a href="#contents">Back to contents</a></p>
+    </div>
+
+    <!-- Recipe 2 -->
+    <div class="recipe">
+      <h2 id="recipe2">Recipe 2 - Chicken Wrap</h2>
+
+      <img src="https://www.kasandbox.org/programming-images/food/cheeseburger.png"
+           alt="A meal image (example food picture)">
+
+      <ul>
+        <li><strong>Time:</strong> 15-20 minutes</li>
+        <li><strong>Serves:</strong> 1-2</li>
+        <li class="note">Tip - add sauce at the end so the wrap stays crisp.</li>
+      </ul>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Ingredients</th>
+            <th>Quantity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Tortilla wrap</td>
+            <td>1-2</td>
+          </tr>
+          <tr>
+            <td>Cooked chicken</td>
+            <td>150 g</td>
+          </tr>
+          <tr>
+            <td>Lettuce</td>
+            <td>1 handful</td>
+          </tr>
+          <tr>
+            <td>Tomato</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>Sauce (yogurt/garlic or mayo)</td>
+            <td>1-2 tbsp</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Steps</h3>
+      <p><strong>Step 1:</strong> Warm the tortilla for 10-15 seconds so it becomes flexible.</p>
+      <p><strong>Step 2:</strong> Add lettuce, sliced tomato, and chicken in the center.</p>
+      <p><strong>Step 3:</strong> Add sauce, fold sides, roll tightly, and cut in half.</p>
+
+      <p><em>Source: <a href="https://en.wikipedia.org/wiki/Wrap_(food)" target="_blank">Wikipedia - Wrap (food)</a></em></p>
+      <p><a href="#contents">Back to contents</a></p>
+    </div>
+
+    <!-- Recipe 3 -->
+    <div class="recipe">
+      <h2 id="recipe3">Recipe 3 - Banana Pancakes</h2>
+
+      <img src="https://www.kasandbox.org/programming-images/food/pancakes.png"
+           alt="Pancakes on a plate">
+
+      <ul>
+        <li><strong>Time:</strong> 12-15 minutes</li>
+        <li><strong>Serves:</strong> 1-2</li>
+        <li class="note">Tip - use a ripe banana for more sweetness.</li>
+      </ul>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Ingredients</th>
+            <th>Quantity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Banana</td>
+            <td>1 (ripe)</td>
+          </tr>
+          <tr>
+            <td>Egg</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>Flour</td>
+            <td>3-4 tbsp</td>
+          </tr>
+          <tr>
+            <td>Milk (optional)</td>
+            <td>2 tbsp</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Steps</h3>
+      <ol>
+        <li>Mash the banana in a bowl.</li>
+        <li>Add egg and mix until smooth.</li>
+        <li>Add flour (and a bit of milk if needed) to make a thick batter.</li>
+        <li>Cook small pancakes on a lightly oiled pan for 1-2 minutes per side.</li>
+      </ol>
+
+      <p><em>Source: <a href="https://en.wikipedia.org/wiki/Pancake" target="_blank">Wikipedia - Pancake</a></em></p>
+      <p><a href="#contents">Back to contents</a></p>
+    </div>
+
+  </body>
+</html>
